@@ -47,6 +47,22 @@ const SoundPlayer = () => {
                         onChange={handleVolumeChange}
                     />
                 </div>
+                <div>
+                    <button onClick={() => playSound("/sound/birds.mp3")}>Rain</button>
+                </div>
+                <div style={{ marginTop: "20px" }}>
+                    <label style={{ marginleft: "20px" }}>
+                        Volume: {Math.round(volume * 100)}%
+                    </label>
+                    <input style={{ marginleft: "20px" }}
+                        type="range"
+                        min="0"
+                        max="1"
+                        step="0.01"
+                        value={volume}
+                        onChange={handleVolumeChange}
+                    />
+                </div>
             </div>
         </>
     );
