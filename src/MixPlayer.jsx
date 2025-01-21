@@ -3,7 +3,7 @@ import * as Tone from 'tone';
 import birds from './sound/birds.mp3';
 import rain from './sound/rain.mp3';
 
-const AudioPlayer = () => {
+const MixPlayer = () => {
   // 音のファイルパスを配列で指定
   const audioFiles = [
     birds, rain
@@ -60,7 +60,6 @@ const AudioPlayer = () => {
         <>
           <button onClick={handlePlay}>Play</button>
           <button onClick={handleStop}>Stop</button>
-
           {/* 各音のボリュームスライダー */}
           {audioFiles.map((file, index) => (
             <div key={index}>
@@ -82,4 +81,4 @@ const AudioPlayer = () => {
   );
 };
 
-export default AudioPlayer;
+export default MixPlayer;

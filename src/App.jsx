@@ -1,13 +1,13 @@
 import './App.css';
-import AudioPlayer from './AudioPlayer';
-import SoundPlayer from "./SoundPlayer";
+import MixPlayer from './MixPlayer';
+import SelectPlayer from "./SelectPlayer";
 
 function App() {
   return (
     <div className="App">
       <h1>Soundscape Creator</h1>
-      {/* <SoundPlayer /> */}
-      <AudioPlayer />
+      <SelectPlayer />
+      <MixPlayer />
     </div>
   );
 }
